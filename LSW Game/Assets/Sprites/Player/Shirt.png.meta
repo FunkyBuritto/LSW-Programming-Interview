@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7e8fdc76ff2f44f4d9479b49e0102281
+guid: 4cab964c589b81a42bca2d8e9232569a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShoesBlack_0
+      name: Shirt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3137463818e4e034cacee42ed2344f32
-      internalID: -935252089
+      spriteID: 5b5bea546e8f9e74c9cbe9c9a464a898
+      internalID: 1176251841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_1
+      name: Shirt_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8693d2fc570d35e4db39531e92cbe794
-      internalID: -807065859
+      spriteID: a3024e12e4fde864ca9ab354541febe1
+      internalID: -1984726811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_2
+      name: Shirt_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d11139c87abec44b88628ec2b08474e
-      internalID: 426457232
+      spriteID: 2ab36ea61c14758499ffe139bdd4769b
+      internalID: 755568053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_3
+      name: Shirt_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b234312de3c364d808eb251b645911
-      internalID: -1965868605
+      spriteID: 9d9dc8395d42bd84f86391406cc52c6b
+      internalID: -1767676587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_4
+      name: Shirt_4
       rect:
         serializedVersion: 2
         x: 0
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acc07c09fdc4a1147b1be1b106b3cad0
-      internalID: -1596092650
+      spriteID: 4d4c9b5cf5f548348ac082851b7c60d0
+      internalID: 150665658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_5
+      name: Shirt_5
       rect:
         serializedVersion: 2
         x: 64
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e51780677c8fa4c9dd2280d5280869
-      internalID: 132007950
+      spriteID: f637bb0d7f66fe046879e12996ca6a51
+      internalID: -884121549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_6
+      name: Shirt_6
       rect:
         serializedVersion: 2
         x: 128
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f9a1265b5e58c4bbe9fd036c9916c3
-      internalID: 1019838460
+      spriteID: 20ac153e800bc7542826d8a9039afc0b
+      internalID: 728604280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_7
+      name: Shirt_7
       rect:
         serializedVersion: 2
         x: 192
@@ -265,14 +265,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db13287ec0254ae48a020ac86206af0f
-      internalID: 820176963
+      spriteID: 02f53c4c1e8cb0c48af5ba3ca442e486
+      internalID: -2035905557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_8
+      name: Shirt_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab1abfb60da79a40b853d320b19a438
+      internalID: 1944922349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d434d6ff0a13b45b7284711653b3d9
+      internalID: -548586777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c3d835eb08b6f4a9848e9d94479dcf
+      internalID: -168447652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aabd0f4b2ff5b42a575b5f4e9740da
+      internalID: -1492433797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_12
       rect:
         serializedVersion: 2
         x: 0
@@ -286,77 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a37b68bd8c6bb07418f8daaef1626a75
-      internalID: 215394376
+      spriteID: 316e918bd11527c42b83f5c3cd56fbde
+      internalID: -1314366132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 576
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 982786e148021f140912277f7dc972cc
-      internalID: 1995680542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_10
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 576
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e625ba1bdbb36be4a9dfbf94bd473f03
-      internalID: 1748106986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_11
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 576
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92684f26104440c4a8a0183d76879a32
-      internalID: -969499183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_12
+      name: Shirt_13
       rect:
         serializedVersion: 2
         x: 0
@@ -370,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70b658b964efa6142888c49eb9d42700
-      internalID: 841965220
+      spriteID: 5d93cbe6817d54940a3bbe1fc8a52737
+      internalID: -1574599779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_13
+      name: Shirt_14
       rect:
         serializedVersion: 2
         x: 64
@@ -391,14 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0dff46a6d676945ad1f27f700d9db5
-      internalID: 2019022059
+      spriteID: 0652adedd25b2a94f9fc6fbb163d8432
+      internalID: 937366431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_14
+      name: Shirt_15
       rect:
         serializedVersion: 2
         x: 128
@@ -412,14 +433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee698c1664518604d9f96b268fb0f9df
-      internalID: 2028305489
+      spriteID: 993c17e66f5ecb6438667907791bd3b2
+      internalID: 1109602963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_15
+      name: Shirt_16
       rect:
         serializedVersion: 2
         x: 192
@@ -433,14 +454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9b2475f04e3c164ebd36fb735fe5e49
-      internalID: -1218896349
+      spriteID: b94fab555ec86ed4f8a6b71ead6266a1
+      internalID: -1763675005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_16
+      name: Shirt_17
       rect:
         serializedVersion: 2
         x: 0
@@ -454,14 +475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbf52deba7ee724bbad3254a7b4918b
-      internalID: -585167885
+      spriteID: 4e106ef894f14344d8e325cde281d0ae
+      internalID: -622460534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_17
+      name: Shirt_18
       rect:
         serializedVersion: 2
         x: 64
@@ -475,14 +496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c62d7594318a364c8e5c8afba5f9272
-      internalID: -1904422535
+      spriteID: f279f60b8284fda48bad45daa52a2272
+      internalID: -857301551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_18
+      name: Shirt_19
       rect:
         serializedVersion: 2
         x: 128
@@ -496,14 +517,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e034bbd3fca9124e8c391d79cb50798
-      internalID: -2075421450
+      spriteID: e09502450213b1a4aaf8865119860207
+      internalID: -686956491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_19
+      name: Shirt_20
       rect:
         serializedVersion: 2
         x: 192
@@ -517,14 +538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f06cf2bd3ef482547a60e0529246c678
-      internalID: 276568434
+      spriteID: 7afb1c2333d81f44ea33997d880549bb
+      internalID: -1877886906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_20
+      name: Shirt_21
       rect:
         serializedVersion: 2
         x: 256
@@ -538,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6662f19ed9cf84c97c71e9552c9eb3
-      internalID: 1449744872
+      spriteID: c7b834fbd5c72de49b6b534948cd52dc
+      internalID: -218210288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_21
+      name: Shirt_22
       rect:
         serializedVersion: 2
         x: 320
@@ -559,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e3a7fc36bcda064ba655aa11a03f096
-      internalID: -1664540330
+      spriteID: 3024e66585b39734181859abee5ed4b1
+      internalID: 1971463588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_22
+      name: Shirt_23
       rect:
         serializedVersion: 2
         x: 384
@@ -580,14 +601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55fce9c569f9b0d43820184f19de267d
-      internalID: -2054945495
+      spriteID: 315d398a462c1284bbbd8446dacde7fa
+      internalID: -901739791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_23
+      name: Shirt_24
       rect:
         serializedVersion: 2
         x: 448
@@ -601,14 +622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d3e3b02434acea4aa2b8f121072ce0d
-      internalID: 358504114
+      spriteID: 86fb75811f4c8654f90669e7a061c641
+      internalID: -1832983240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_24
+      name: Shirt_25
       rect:
         serializedVersion: 2
         x: 0
@@ -622,161 +643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df05bc3d2812edd44ab4ce1ec3ffd800
-      internalID: 695029059
+      spriteID: bfe09d8cf8fe55b469ff40015d06d8cf
+      internalID: 712519163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_25
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 763f8aed18106ac49afb7192e8c02d94
-      internalID: 1764991121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_26
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05e2a701a0bf2964e8ad0c61446a659d
-      internalID: -1386105240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_27
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f85e76d9475aba54cbbf38ba986da6c3
-      internalID: -2083335422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_28
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2668f27242a7d934b91f9c16087375bf
-      internalID: 464592697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_29
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c6af15a1d034af4bb84065d34e9f3cf
-      internalID: 1557005293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_30
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72476d862bb1be74ca6207337d6d2738
-      internalID: -210853870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_31
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 384
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70706410917676e429c17b5d20b064f7
-      internalID: 236096170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_32
+      name: Shirt_26
       rect:
         serializedVersion: 2
         x: 0
@@ -790,14 +664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38143aafd114afa469a2b140541947e6
-      internalID: -606114223
+      spriteID: adf0bb250f465084fab1a2a28b6370d1
+      internalID: 777485545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_33
+      name: Shirt_27
       rect:
         serializedVersion: 2
         x: 64
@@ -811,14 +685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d87b693aeeb59834bb6a485e28520eba
-      internalID: -1086756958
+      spriteID: 08172250e47b09e41a155d6b991b53b3
+      internalID: -1454086414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_34
+      name: Shirt_28
       rect:
         serializedVersion: 2
         x: 128
@@ -832,14 +706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7dbbc049e7322445b97ef3d021234a5
-      internalID: 524214116
+      spriteID: ebdd33c8542a5fd41b57c3b6ff2027b5
+      internalID: -997264191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_35
+      name: Shirt_29
       rect:
         serializedVersion: 2
         x: 192
@@ -853,98 +727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6581a7720ef643d4ea8730157df7f0ce
-      internalID: 1047915455
+      spriteID: 23be02ef03ca58b479997f938fae67b6
+      internalID: 1010815705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_36
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1f998cbfe6c6d543af98cc1316b15b1
-      internalID: 1470376714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_37
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ba4ced267d9c9c43b26cd2f6cb40ddd
-      internalID: -64299083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_38
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87d210d932cc0c54a9f2e791afbdc5a2
-      internalID: -1100547109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_39
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8eed649fff59994dba02a49e916ec3a
-      internalID: -1596297226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShoesBlack_40
+      name: Shirt_30
       rect:
         serializedVersion: 2
         x: 0
@@ -958,14 +748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51314c077de1a3f488c2ea9d99fa6156
-      internalID: 1594908119
+      spriteID: 8cb1bfcc6bb70b14c9300a4b6402cb2f
+      internalID: -915343724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_41
+      name: Shirt_31
       rect:
         serializedVersion: 2
         x: 64
@@ -979,14 +769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce6355f2d78605043b692c261d4bcf1c
-      internalID: -816758921
+      spriteID: f87b172bdda53a345b55115de7479b9f
+      internalID: -1280873367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_42
+      name: Shirt_32
       rect:
         serializedVersion: 2
         x: 128
@@ -1000,14 +790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa22a3cb06061ec41be8773a6780badf
-      internalID: -875456359
+      spriteID: 993b02ae810e9ee45a5ccf2e7f36aecf
+      internalID: 1265319195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_43
+      name: Shirt_33
       rect:
         serializedVersion: 2
         x: 192
@@ -1021,14 +811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a3d1b0b1165ff4ba48e121e007c775
-      internalID: -1461188286
+      spriteID: cb9cc51bbbd9b1a4e8c8aca7796a1a62
+      internalID: -2114525930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_44
+      name: Shirt_34
       rect:
         serializedVersion: 2
         x: 256
@@ -1042,14 +832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fdff9e31c145b04184dbb1ae32f239f
-      internalID: 1922935858
+      spriteID: e0fd770b43e77ac47905dbcf515b267c
+      internalID: -583210436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_45
+      name: Shirt_35
       rect:
         serializedVersion: 2
         x: 320
@@ -1063,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bea73deea362ec41a6fa123260b9429
-      internalID: 1910185637
+      spriteID: 5b8b53d2365462546b642fc374a76410
+      internalID: -686104277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_46
+      name: Shirt_36
       rect:
         serializedVersion: 2
         x: 384
@@ -1084,14 +874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2951f42558c3144fa8b86472908101d
-      internalID: 265851499
+      spriteID: 16760e4c7d0c77b43bc8f4a0c0169494
+      internalID: -373421759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_47
+      name: Shirt_37
       rect:
         serializedVersion: 2
         x: 448
@@ -1105,14 +895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63958a372fe72744aa27ab56c70918d7
-      internalID: -62291070
+      spriteID: 66e05eeada4203d4b9acb00515f00f45
+      internalID: -1453477923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_48
+      name: Shirt_38
       rect:
         serializedVersion: 2
         x: 0
@@ -1126,14 +916,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d98e8855d42ccb4ead88ce862b5f612
-      internalID: -1172648588
+      spriteID: ca7beacd73fb8d7439ee633eddbf6c44
+      internalID: -657691215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_49
+      name: Shirt_39
       rect:
         serializedVersion: 2
         x: 0
@@ -1147,14 +937,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bffa070c1056427499dadeebcd6896e3
-      internalID: -1041171729
+      spriteID: d08bee5652072124abd407d0537dfd07
+      internalID: -2021095717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_50
+      name: Shirt_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758b95013073d0d4dbca41ab501920c6
+      internalID: 1478235252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc5aff77d52846438b43ffd08b33b67
+      internalID: -791026198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5957616a2ceefa54ebb2295c63e33a94
+      internalID: -2011851709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_43
       rect:
         serializedVersion: 2
         x: 0
@@ -1168,14 +1021,161 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c3f552a1f0eaf1478c368d15bd167e6
-      internalID: 1220998535
+      spriteID: f8373f69535b4b443a0d4cbbdc73a7fb
+      internalID: 1078058868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShoesBlack_51
+      name: Shirt_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99103375efc3f74c8e21bc7e29851c6
+      internalID: -1722995061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e81d036d4309e4396cf9038949abbc
+      internalID: -1327167049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09b6353b61854c4a989d510ca1df210
+      internalID: -950045498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1efe316827749c4899dcabf6d1bce5b
+      internalID: 1479332394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b6b17d245db9c4e9b26c54900e4f84
+      internalID: 1501619526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24f161c9b1677c4cb76e652259ec9dd
+      internalID: 373788225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8beb59becb39af468a5c083bbec6343
+      internalID: -1201824633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shirt_51
       rect:
         serializedVersion: 2
         x: 0
@@ -1189,8 +1189,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61fe1c8c9c31e6646ba387f74f319c7d
-      internalID: -70475699
+      spriteID: 20e8bb2663e5a634aba79777288d3155
+      internalID: -1352415156
       vertices: []
       indices: 
       edges: []
@@ -1206,58 +1206,58 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ShoesBlack_5: 132007950
-      ShoesBlack_4: -1596092650
-      ShoesBlack_14: 2028305489
-      ShoesBlack_34: 524214116
-      ShoesBlack_45: 1910185637
-      ShoesBlack_18: -2075421450
-      ShoesBlack_16: -585167885
-      ShoesBlack_36: 1470376714
-      ShoesBlack_10: 1748106986
-      ShoesBlack_19: 276568434
-      ShoesBlack_43: -1461188286
-      ShoesBlack_6: 1019838460
-      ShoesBlack_37: -64299083
-      ShoesBlack_2: 426457232
-      ShoesBlack_29: 1557005293
-      ShoesBlack_50: 1220998535
-      ShoesBlack_41: -816758921
-      ShoesBlack_1: -807065859
-      ShoesBlack_40: 1594908119
-      ShoesBlack_30: -210853870
-      ShoesBlack_7: 820176963
-      ShoesBlack_13: 2019022059
-      ShoesBlack_28: 464592697
-      ShoesBlack_51: -70475699
-      ShoesBlack_21: -1664540330
-      ShoesBlack_47: -62291070
-      ShoesBlack_48: -1172648588
-      ShoesBlack_33: -1086756958
-      ShoesBlack_12: 841965220
-      ShoesBlack_11: -969499183
-      ShoesBlack_39: -1596297226
-      ShoesBlack_42: -875456359
-      ShoesBlack_8: 215394376
-      ShoesBlack_49: -1041171729
-      ShoesBlack_15: -1218896349
-      ShoesBlack_17: -1904422535
-      ShoesBlack_22: -2054945495
-      ShoesBlack_44: 1922935858
-      ShoesBlack_24: 695029059
-      ShoesBlack_20: 1449744872
-      ShoesBlack_23: 358504114
-      ShoesBlack_27: -2083335422
-      ShoesBlack_0: -935252089
-      ShoesBlack_26: -1386105240
-      ShoesBlack_38: -1100547109
-      ShoesBlack_9: 1995680542
-      ShoesBlack_35: 1047915455
-      ShoesBlack_46: 265851499
-      ShoesBlack_3: -1965868605
-      ShoesBlack_25: 1764991121
-      ShoesBlack_31: 236096170
-      ShoesBlack_32: -606114223
+      Shirt_2: 755568053
+      Shirt_50: -1201824633
+      Shirt_45: -1327167049
+      Shirt_43: 1078058868
+      Shirt_33: -2114525930
+      Shirt_7: -2035905557
+      Shirt_27: -1454086414
+      Shirt_37: -1453477923
+      Shirt_16: -1763675005
+      Shirt_0: 1176251841
+      Shirt_11: -1492433797
+      Shirt_32: 1265319195
+      Shirt_10: -168447652
+      Shirt_13: -1574599779
+      Shirt_3: -1767676587
+      Shirt_18: -857301551
+      Shirt_21: -218210288
+      Shirt_41: -791026198
+      Shirt_35: -686104277
+      Shirt_26: 777485545
+      Shirt_1: -1984726811
+      Shirt_6: 728604280
+      Shirt_15: 1109602963
+      Shirt_42: -2011851709
+      Shirt_8: 1944922349
+      Shirt_38: -657691215
+      Shirt_9: -548586777
+      Shirt_30: -915343724
+      Shirt_28: -997264191
+      Shirt_47: 1479332394
+      Shirt_12: -1314366132
+      Shirt_51: -1352415156
+      Shirt_31: -1280873367
+      Shirt_23: -901739791
+      Shirt_48: 1501619526
+      Shirt_34: -583210436
+      Shirt_5: -884121549
+      Shirt_46: -950045498
+      Shirt_17: -622460534
+      Shirt_29: 1010815705
+      Shirt_40: 1478235252
+      Shirt_4: 150665658
+      Shirt_36: -373421759
+      Shirt_20: -1877886906
+      Shirt_49: 373788225
+      Shirt_44: -1722995061
+      Shirt_39: -2021095717
+      Shirt_14: 937366431
+      Shirt_19: -686956491
+      Shirt_22: 1971463588
+      Shirt_25: 712519163
+      Shirt_24: -1832983240
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
