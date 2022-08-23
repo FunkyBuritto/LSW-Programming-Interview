@@ -11,17 +11,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxSpeed;
 
     private Rigidbody2D rb;
+    private Animator animator;
     private Vector2 input;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    void Update()
     {
         // Store keyboard input in a Vector2
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        // Set the velocities in the animator as scaled velocities.
+        animator.SetFloat("VelocityX", input.x);
+        animator.SetFloat("VelocityY", input.y);
     }
 
     void FixedUpdate() 
