@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74867b98448022248b113e3d42b3fe3a, type: 3}
+  m_Name: RedShirt
+  m_EditorClassIdentifier: 
+  itemName: Red Shirt
+  itenDescription: Just a red shirt.
+  icon: {fileID: 0}
+  price: 10
+  type: 0
+  clothingPrefab: {fileID: 4191639789581874387, guid: d7a645ebc0d0a114e8124176a628f15b, type: 3}
