@@ -62,6 +62,23 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void RemoveItem(int index)
+    {
+        // See if the item is in the inventory
+        if (inventory.Count > index && itemDictionary.TryGetValue(inventory[index].item, out InventorySlot slot))
+        {
+            slot.stackSize--;
+            // Remove the slot if there are none left
+            if (slot.stackSize <= 0)
+            {
+                itemDictionary.Remove(inventory[index].item);
+                inventory.Remove(slot);
+            }
+
+            UpdateIventoryUI();
+        }
+    }
+
     private void UpdateIventoryUI() {
         // Loop over all the UI slots
         for (int i = 0; i < inventorySlots.Count; i++)
@@ -78,6 +95,15 @@ public class InventoryManager : MonoBehaviour
                 inventoryText[i].text = "";
             }   
         }
+    }
+
+    public void PressedSlot(int index) {
+        if (inventory.Count > index && ShopkeeperManager.instance.IsRequestedItem(inventory[index].item))
+        {
+            Debug.Log("is Requested Item");
+            ShopkeeperManager.instance.RemoveItem(inventory[index].item);
+            RemoveItem(index);
+        }         
     }
 }
 

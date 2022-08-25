@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public bool isLocked;
     [HideInInspector] public bool inShopkeeperRange;
 
-    void Start()
+    private void Start()
     {
         instance = this;
 
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void Update()
+    private void Update()
     {
         // Store keyboard input in a Vector2
         input = new Vector2(isLocked ? 0 : Input.GetAxisRaw("Horizontal"), isLocked ? 0 : Input.GetAxisRaw("Vertical"));
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate() 
+    private void FixedUpdate() 
     {
         // Code doesnt go further if the player is locked
         if (isLocked) {
@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector2.Lerp(rb.velocity, input.normalized * maxSpeed, input == Vector2.zero ? dampening : acceleration);
     }
 
-    void UpdateAnimators()
+    private void UpdateAnimators()
     {
         // Set all the velocities in the animator as scaled velocities
         animator.SetFloat("VelocityX", input.x);

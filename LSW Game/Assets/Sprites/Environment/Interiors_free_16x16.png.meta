@@ -721,7 +721,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -729,6 +729,27 @@ TextureImporter:
       bones: []
       spriteID: 3690f80112e73ad4ca7e38906b3303de
       internalID: -286705300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash Vase
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 340
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c63f87381cc98640b148d9893721ded
+      internalID: 1641143441
       vertices: []
       indices: 
       edges: []
@@ -757,6 +778,7 @@ TextureImporter:
       Interiors_free_16x16_1: -161058490
       ProductShelfOpen: -125889985
       RadishFood: 813366246
+      Trash Vase: 1641143441
       Interiors_free_16x16_6: 698935196
       Interiors_free_16x16_3: -1184936540
       Interiors_free_16x16_2: 1908283550

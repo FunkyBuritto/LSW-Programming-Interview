@@ -2,21 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
-public enum InteractionType
-{
-    Dialog,
-    Request,
-    RandomRequest
-}
-
-[System.Serializable]
-class ShopkeeperInteraction 
-{
-    public InteractionType type;
-    public string dialog;
-    public List<InventorySlot> request;
-}
+using UnityEngine.UI;
 
 public class ShopkeeperManager : MonoBehaviour
 {
@@ -24,28 +10,30 @@ public class ShopkeeperManager : MonoBehaviour
 
     [SerializeField] private float dialogTime;
     [SerializeField] private TextMeshProUGUI textBox;
+    [SerializeField] private GameObject requestPanel;
+    [SerializeField] private GameObject requestPrefab;
+    [SerializeField] private List<GameObject> sellButtons;
+    [SerializeField] private List<GameObject> removeButtons;
 
     [SerializeField] private List<ShopkeeperInteraction> interactions = new List<ShopkeeperInteraction>();
     private List<InventorySlot> requestedItems = new List<InventorySlot>();
     private bool requestMade;
 
-    private int interactionCount = -1;
+    [SerializeField] private int interactionCount = -1;
 
-    // Start is called before the first frame update
     void Start() {  instance = this; }
 
-    // Update is called once per frame
-    void Update()
+    public void Interact() 
     {
-        
-    }
-
-    public void Interact() {
         interactionCount++;
 
         // Check if we still have enough interactions
         if (interactionCount > interactions.Count - 1)
             return;
+
+        // Reset the textbox
+        if (textBox.text != "")
+            textBox.text = "";
 
         // Check which type of interaction this is
         switch (interactions[interactionCount].type)
@@ -55,7 +43,6 @@ public class ShopkeeperManager : MonoBehaviour
                 break;
             case InteractionType.Request:
                 Request(interactions[interactionCount].request);
-                Debug.Log("Request");
                 break;
             case InteractionType.RandomRequest:
                 // Request(RandomRequest);
@@ -66,7 +53,57 @@ public class ShopkeeperManager : MonoBehaviour
         }
     }
 
-    void Request(List<InventorySlot> request) {
+    public void UpdateRequestUI()
+    {
+        // Clear the pannel (for loop starts at 1 so it ignores the parrents transform)
+        Transform[] children = requestPanel.GetComponentsInChildren<Transform>();
+        for (int i = 1; i < children.Length; i++)
+        {
+            Destroy(children[i].gameObject);
+        }
+
+        // Renew the pannel
+        for (int i = 0; i < requestedItems.Count; i++)
+        {
+            GameObject g = Instantiate(requestPrefab, requestPanel.transform);
+            g.GetComponentInChildren<Image>().sprite = requestedItems[i].item.icon;
+            g.GetComponentInChildren<TextMeshProUGUI>().text = requestedItems[i].stackSize.ToString();
+        }
+    }
+
+    public void RemoveItem(InventoryItem item){
+        for (int i = 0; i < requestedItems.Count; i++) 
+        {
+            // Check if the item has a match decrease size if there are multiple
+            // it there is only 1 remove it completely
+            if (requestedItems[i].item == item) {
+                if (requestedItems[i].stackSize > 1) {
+                    requestedItems[i].stackSize--;
+                } else {
+                    requestedItems.RemoveAt(i);
+
+                    // If there are no more requested items move to the next interaction
+                    if (requestedItems.Count == 0)
+                        interactionCount++;
+                }
+                UpdateRequestUI();
+                return;
+            }  
+        }
+    }
+
+    /// <returns>True if it is one of the requested item, False if its not</returns>
+    public bool IsRequestedItem(InventoryItem item) {
+        for (int i = 0; i < requestedItems.Count; i++)
+        {
+            if (requestedItems[i].item == item)
+                return true;
+        } 
+        return false;
+    }
+
+    private void Request(List<InventorySlot> request) 
+    {
         // See if its the first time we go over this code
         if (requestMade) {
             // if we are not done with this request yet set the interaction one back so we return here
@@ -81,10 +118,11 @@ public class ShopkeeperManager : MonoBehaviour
             requestedItems = request;
             requestMade = true;
             interactionCount--;
+            UpdateRequestUI();
         }
     }
 
-    IEnumerator Dialog(string text)
+    private IEnumerator Dialog(string text)
     {
         PlayerController.instance.isLocked = true;
 
@@ -106,14 +144,47 @@ public class ShopkeeperManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
+        {
+            // Toggle sell and remove buttons
+            for (int i = 0; i < sellButtons.Count; i++) 
+            {
+                sellButtons[i].SetActive(true);
+                removeButtons[i].SetActive(false);
+            }
             PlayerController.instance.inShopkeeperRange = true;
+        }
+            
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
+        {
+            // Toggle sell and remove buttons
+            for (int i = 0; i < sellButtons.Count; i++)
+            {
+                sellButtons[i].SetActive(false);
+                removeButtons[i].SetActive(true);
+            }
             PlayerController.instance.inShopkeeperRange = false;
+        }
+            
     }
+}
+
+public enum InteractionType
+{
+    Dialog,
+    Request,
+    RandomRequest
+}
+
+[System.Serializable]
+class ShopkeeperInteraction
+{
+    public InteractionType type;
+    public string dialog;
+    public List<InventorySlot> request;
 }
 
 
