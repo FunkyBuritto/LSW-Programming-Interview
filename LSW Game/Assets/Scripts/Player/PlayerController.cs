@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
+    public int money;
+
     [Header("Movement")]
     [SerializeField] [Range(0, 1)] private float acceleration;
     [SerializeField] [Range(0, 1)] private float dampening;
@@ -17,13 +19,13 @@ public class PlayerController : MonoBehaviour
 
     private GameObject shirtObject, shoesObject;
     private Animator shirtAnim, shoesAnim;
-    
     private Rigidbody2D rb;
     private Animator animator;
     private Vector2 input;
-
+    
     [HideInInspector] public List<ItemObject> itemObjects = new List<ItemObject>();
     [HideInInspector] public bool isLocked;
+    [HideInInspector] public bool inShopkeeperRange;
 
     void Start()
     {
@@ -59,6 +61,12 @@ public class PlayerController : MonoBehaviour
         // Check if we press the interact button
         if (Input.GetKeyDown(KeyCode.E)) {
 
+            // if we are in Shopkeeper Range we dont search for an item
+            if (inShopkeeperRange) {
+                ShopkeeperManager.instance.Interact();
+                return;
+            }
+
             // Get the item closest to the player that is in range
             ItemObject shortest = null;
             float dist = 0;
@@ -81,8 +89,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate() 
     {
         // Code doesnt go further if the player is locked
-        if (isLocked)
+        if (isLocked) {
+            rb.velocity = Vector2.zero;
             return;
+        }
 
         // Set the players velocity to a value between the current velocity and the "target" velocity to make it smoothed
         // if there is no input dampen the velocity
