@@ -41,8 +41,6 @@ public class PlayerController : MonoBehaviour
     {
         instance = this;
 
-        Money = 150;
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
