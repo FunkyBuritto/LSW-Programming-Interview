@@ -14,4 +14,5 @@ public class ClothingItem : InventoryItem
     public ClothingType type;
     public GameObject clothingPrefab;
     public Color clothingColor;
+    public int itemPower;
 }

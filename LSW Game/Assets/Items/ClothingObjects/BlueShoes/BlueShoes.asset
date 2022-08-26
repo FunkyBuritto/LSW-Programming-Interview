@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74867b98448022248b113e3d42b3fe3a, type: 3}
-  m_Name: RedShirt
+  m_Name: BlueShoes
   m_EditorClassIdentifier: 
-  itemName: Red Shirt
-  itenDescription: Just a red shirt.
-  value: 9
-  icon: {fileID: 1176251841, guid: 4cab964c589b81a42bca2d8e9232569a, type: 3}
-  type: 0
-  clothingPrefab: {fileID: 4191639789581874387, guid: d7a645ebc0d0a114e8124176a628f15b, type: 3}
-  clothingColor: {r: 1, g: 0.4117647, b: 0.4117647, a: 1}
-  itemPower: 1
+  itemName: Blue Shoes
+  itenDescription: Just a pair of Blue shoes.
+  value: 27
+  icon: {fileID: 326866957, guid: 7e8fdc76ff2f44f4d9479b49e0102281, type: 3}
+  type: 1
+  clothingPrefab: {fileID: 6422667283554594937, guid: 9ded650647b6f6b4d8030b03eecf8637, type: 3}
+  clothingColor: {r: 0.4117647, g: 0.4117647, b: 1, a: 1}
+  itemPower: 2

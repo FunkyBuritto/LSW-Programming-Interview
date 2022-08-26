@@ -28,7 +28,7 @@ public class ClosetSlot : MonoBehaviour
     private void Buy()
     {
         // If the player has enough money buy it
-        if (PlayerController.instance.Money - item.value > 0) {
+        if (PlayerController.instance.Money - item.value >= 0) {
             PlayerController.instance.Money -= item.value;
             buttonText.text = "Equip";
             priceText.text = "";
@@ -45,6 +45,7 @@ public class ClosetSlot : MonoBehaviour
             PlayerController.instance.shoes = item;
 
         PlayerController.instance.UpdateClothing();
+        InventoryManager.instance.UpdateIventoryUI();
     }
 
     public void Pressed() {

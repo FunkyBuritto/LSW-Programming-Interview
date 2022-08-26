@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pizza Food
   itenDescription: A weird looking pizza.
+  value: 2
   icon: {fileID: 367999614, guid: 84edf6b86d37d064ebf00445b23a57d6, type: 3}

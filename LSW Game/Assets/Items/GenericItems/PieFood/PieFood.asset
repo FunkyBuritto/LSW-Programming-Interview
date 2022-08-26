@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pie Food
   itenDescription: Something resembeling a Pie.
+  value: 2
   icon: {fileID: 669352710, guid: 84edf6b86d37d064ebf00445b23a57d6, type: 3}

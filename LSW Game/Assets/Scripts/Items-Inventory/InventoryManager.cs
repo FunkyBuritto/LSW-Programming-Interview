@@ -8,6 +8,9 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
 
+    public int maxInventorySize;
+    [SerializeField] private TextMeshProUGUI inventorySizeText;
+
     [HideInInspector] public List<InventorySlot> inventory = new List<InventorySlot>();
     private Dictionary<InventoryItem, InventorySlot> itemDictionary = new Dictionary<InventoryItem, InventorySlot>();
 
@@ -18,7 +21,7 @@ public class InventoryManager : MonoBehaviour
     private void Awake() { 
         instance = this;
 
-        // Loop over the inventory slots parents and get assign the components of their children
+        // Loop over the inventory slots parents and assign the components of their children
         for (int i = 0; i < inventorySlots.Count; i++)
         {
             inventoryIcons.Add(inventorySlots[i].GetComponentsInChildren<Image>()[1]);
@@ -28,8 +31,20 @@ public class InventoryManager : MonoBehaviour
         UpdateIventoryUI();
     }
 
+    private int InventorySize() {
+        int size = 0;
+        for (int i = 0; i < inventory.Count; i++) {
+            size += inventory[i].stackSize;
+        }
+        return size;
+    }
+
     public void AddItem(InventoryItem item)
     {
+        // If inventory is full don't add any items
+        if (InventorySize() >= maxInventorySize + (PlayerController.instance.shirt ? PlayerController.instance.shirt.itemPower : 0))
+            return;
+
         // See if the item is already in the inventory
         // Increase the size if true, create a new slot if false
         if(itemDictionary.TryGetValue(item, out InventorySlot slot)) {
@@ -79,7 +94,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    private void UpdateIventoryUI() {
+    public void UpdateIventoryUI() {
         // Loop over all the UI slots
         for (int i = 0; i < inventorySlots.Count; i++)
         {
@@ -89,18 +104,22 @@ public class InventoryManager : MonoBehaviour
                 inventoryIcons[i].sprite = inventory[i].item.icon;
                 inventoryIcons[i].color = Color.white;
                 inventoryText[i].text = inventory[i].stackSize.ToString();
+                
             } else {
                 inventoryIcons[i].sprite = null;
                 inventoryIcons[i].color = Color.clear;
                 inventoryText[i].text = "";
             }   
         }
+
+        // Update the inventory size text
+        inventorySizeText.text = InventorySize().ToString() + " / " + (maxInventorySize + (PlayerController.instance.shirt ? PlayerController.instance.shirt.itemPower : 0)).ToString();
     }
 
     public void PressedSlot(int index) {
+        // Remove item in slot if possible
         if (inventory.Count > index && ShopkeeperManager.instance.IsRequestedItem(inventory[index].item))
         {
-            Debug.Log("is Requested Item");
             ShopkeeperManager.instance.RemoveItem(inventory[index].item);
             RemoveItem(index);
         }         

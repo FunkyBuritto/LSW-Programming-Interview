@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Green Food
   itenDescription: A veriety of food that look green all together.
+  value: 3
   icon: {fileID: -1871918885, guid: 84edf6b86d37d064ebf00445b23a57d6, type: 3}

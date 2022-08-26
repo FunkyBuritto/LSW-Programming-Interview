@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Orange Food
   itenDescription: A veriety of food that look Orange all together.
+  value: 3
   icon: {fileID: 544471290, guid: 84edf6b86d37d064ebf00445b23a57d6, type: 3}

@@ -2097,6 +2097,7 @@ RectTransform:
   - {fileID: 2143632025}
   - {fileID: 1291660867}
   - {fileID: 1923112036}
+  - {fileID: 637447058}
   m_Father: {fileID: 1386507425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3559,7 +3560,7 @@ MonoBehaviour:
   buttonText: {fileID: 580799297}
   priceText: {fileID: 1162386115}
   itemImage: {fileID: 957728728}
-  item: {fileID: 11400000, guid: 508e91d8a25db68499ae2cf8c39b868c, type: 2}
+  item: {fileID: 11400000, guid: 1941c29da3270e74fb3f559ff5f12395, type: 2}
 --- !u!114 &366999274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5302,7 +5303,7 @@ MonoBehaviour:
   buttonText: {fileID: 743454149}
   priceText: {fileID: 229132552}
   itemImage: {fileID: 143368062}
-  item: {fileID: 11400000, guid: 508e91d8a25db68499ae2cf8c39b868c, type: 2}
+  item: {fileID: 11400000, guid: 7590aacb7e21c7f468f50cd0892c2b0b, type: 2}
 --- !u!114 &544967519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6621,6 +6622,141 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6981666319404400457, guid: cb26264dd7bea014a9cf689975bcb61c, type: 3}
   m_PrefabInstance: {fileID: 635275994}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &637447057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637447058}
+  - component: {fileID: 637447060}
+  - component: {fileID: 637447059}
+  m_Layer: 5
+  m_Name: InventorySizeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &637447058
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637447057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 214440238}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.75, y: -0.5}
+  m_SizeDelta: {x: 2.75, y: 0.75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &637447059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637447057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 000 / 000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 6ce7895fb9e78ce4dad4d1e58562c704, type: 2}
+  m_sharedMaterial: {fileID: -4947068449656052816, guid: 6ce7895fb9e78ce4dad4d1e58562c704, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.8
+  m_fontSizeBase: 0.8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &637447060
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637447057}
+  m_CullTransparentMesh: 1
 --- !u!1001 &642235110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7202,7 +7338,7 @@ MonoBehaviour:
   buttonText: {fileID: 778170782}
   priceText: {fileID: 169373244}
   itemImage: {fileID: 1007719495}
-  item: {fileID: 11400000, guid: 1bf67c9024845dd4eb4134b0db0714f0, type: 2}
+  item: {fileID: 11400000, guid: 1d3959151501fda4baacd253f93596a5, type: 2}
 --- !u!114 &726959096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7382,7 +7518,7 @@ MonoBehaviour:
   buttonText: {fileID: 1614601651}
   priceText: {fileID: 762589943}
   itemImage: {fileID: 1144735595}
-  item: {fileID: 11400000, guid: 1bf67c9024845dd4eb4134b0db0714f0, type: 2}
+  item: {fileID: 11400000, guid: 7122f7e15eef8514285f3b2578d5eeec, type: 2}
 --- !u!114 &732144575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7877,7 +8013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b4cdc76e30bf446ba12390c40e5134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 100
+  moneyText: {fileID: 738773779}
   acceleration: 0.15
   dampening: 0.2
   maxSpeed: 3
@@ -7954,6 +8090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8525284b2de535e42b9cd86bb909a61c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxInventorySize: 3
+  inventorySizeText: {fileID: 637447059}
   inventory: []
   inventorySlots:
   - {fileID: 1593962937}
@@ -8513,7 +8651,7 @@ MonoBehaviour:
   buttonText: {fileID: 956218309}
   priceText: {fileID: 1653949683}
   itemImage: {fileID: 1192583315}
-  item: {fileID: 11400000, guid: 1bf67c9024845dd4eb4134b0db0714f0, type: 2}
+  item: {fileID: 11400000, guid: 6f6a50bc0f9321245bb62c86f744987e, type: 2}
 --- !u!114 &796449731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8668,9 +8806,19 @@ MonoBehaviour:
   - {fileID: 586269794}
   - {fileID: 622309990}
   - {fileID: 1050176832}
+  itemList:
+  - {fileID: 11400000, guid: 0cf3507bcf0817f4fb60bae3b68ff783, type: 2}
+  - {fileID: 11400000, guid: c762cf8d98a4253419230c77ff84164e, type: 2}
+  - {fileID: 11400000, guid: b926fb2b8ad1c2b4d923790ae744fb45, type: 2}
+  - {fileID: 11400000, guid: 7deec9ddf1aa7fe49af082fbfd4c38e1, type: 2}
+  - {fileID: 11400000, guid: f02d0b52f90f78e40b96b49cc893f2e0, type: 2}
+  - {fileID: 11400000, guid: 10427fe1c48c4c44b81edb4e0eff60cc, type: 2}
   interactions:
   - type: 0
-    dialog: Hi there! Wanna make some cash?
+    dialog: Hey you there! Could you come here?
+    request: []
+  - type: 0
+    dialog: Wanna make some cash?
     request: []
   - type: 0
     dialog: Just grab the products that I request.
@@ -8688,17 +8836,28 @@ MonoBehaviour:
     request:
     - item: {fileID: 11400000, guid: f02d0b52f90f78e40b96b49cc893f2e0, type: 2}
       stackSize: 1
+    - item: {fileID: 11400000, guid: 10427fe1c48c4c44b81edb4e0eff60cc, type: 2}
+      stackSize: 1
     - item: {fileID: 11400000, guid: c762cf8d98a4253419230c77ff84164e, type: 2}
-      stackSize: 3
-    - item: {fileID: 11400000, guid: b926fb2b8ad1c2b4d923790ae744fb45, type: 2}
       stackSize: 2
   - type: 0
-    dialog: Your done :)
+    dialog: Now that you got some money, visit the closet.
+    request: []
+  - type: 0
+    dialog: Every shirt makes you hold more products,
+    request: []
+  - type: 0
+    dialog: And every pair of shoes makes you run faster.
     request: []
   - type: 2
     dialog: 
     request: []
-  interactionCount: -1
+  - type: 0
+    dialog: I could keep going infinitely!
+    request: []
+  - type: 2
+    dialog: 
+    request: []
 --- !u!61 &796785811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12901,7 +13060,7 @@ MonoBehaviour:
   buttonText: {fileID: 1677034488}
   priceText: {fileID: 521104303}
   itemImage: {fileID: 1050658385}
-  item: {fileID: 11400000, guid: 508e91d8a25db68499ae2cf8c39b868c, type: 2}
+  item: {fileID: 11400000, guid: c718aec27a01dae4391d7cabe296d01f, type: 2}
 --- !u!114 &1353363853
 MonoBehaviour:
   m_ObjectHideFlags: 0

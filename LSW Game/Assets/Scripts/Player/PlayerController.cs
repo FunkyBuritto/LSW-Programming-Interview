@@ -7,7 +7,16 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    public int Money;
+    public int Money
+    {
+        get { return money; }
+        set 
+        {
+            money = value;
+            UpdateMoneyText();
+        }
+    }
+    private int money;
     [SerializeField] private TextMeshProUGUI moneyText;
 
     [Header("Movement")]
@@ -28,9 +37,11 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public List<Interactable> interactables = new List<Interactable>();
     [HideInInspector] public bool isLocked;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
+
+        Money = 150;
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -79,7 +90,11 @@ public class PlayerController : MonoBehaviour
 
         // Set the players velocity to a value between the current velocity and the "target" velocity to make it smoothed
         // if there is no input dampen the velocity
-        rb.velocity = Vector2.Lerp(rb.velocity, input.normalized * maxSpeed, input == Vector2.zero ? dampening : acceleration);
+        rb.velocity = Vector2.Lerp(rb.velocity, input.normalized * (maxSpeed + (shoes ? shoes.itemPower : 0)), input == Vector2.zero ? dampening : acceleration);
+    }
+
+    private void UpdateMoneyText() {
+        moneyText.text = "$" + money;
     }
 
     private void UpdateAnimators()
@@ -125,6 +140,7 @@ public class PlayerController : MonoBehaviour
             shoesAnim.Play("RunUp");
         }
 
+        // Syncing up the animations
         animator.Play("RunUp");
     }
 }

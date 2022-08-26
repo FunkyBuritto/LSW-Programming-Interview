@@ -14,14 +14,19 @@ public class ShopkeeperManager : Interactable
     [SerializeField] private GameObject requestPrefab;
     [SerializeField] private List<GameObject> sellButtons;
     [SerializeField] private List<GameObject> removeButtons;
+    [SerializeField] private List<InventoryItem> itemList;
 
     [SerializeField] private List<ShopkeeperInteraction> interactions = new List<ShopkeeperInteraction>();
     private List<InventorySlot> requestedItems = new List<InventorySlot>();
     private bool requestMade;
 
-    [SerializeField] private int interactionCount = -1;
+    private int interactionCount = -1;
 
-    void Start() {  instance = this; }
+    void Start() 
+    {  
+        instance = this;
+        Interact();
+    }
 
     public override void Interact() 
     {
@@ -29,7 +34,7 @@ public class ShopkeeperManager : Interactable
 
         // Check if we still have enough interactions
         if (interactionCount > interactions.Count - 1)
-            return;
+            interactionCount--;
 
         // Reset the textbox
         if (textBox.text != "")
@@ -45,8 +50,30 @@ public class ShopkeeperManager : Interactable
                 Request(interactions[interactionCount].request);
                 break;
             case InteractionType.RandomRequest:
-                // Request(RandomRequest);
-                Debug.Log("RandomRequest");
+                // If there are currently no requested items randomize a item request
+                if (requestedItems.Count <= 0)
+                {
+                    List<InventorySlot> request = new List<InventorySlot>();
+
+                    // Duplicate the list of items so we can remove them so we dont get duplicates
+                    List<InventoryItem> currentItems = new List<InventoryItem>(itemList);
+                    int randomAmount = Random.Range(1, 4);
+                    for (int i = 0; i < randomAmount; i++)
+                    {
+                        // Get a random item
+                        int randomIndex = Random.Range(0, currentItems.Count - 1);
+                        Debug.Log(randomIndex);
+                        // Add the item to the request and randomize its size
+                        request.Add(new InventorySlot(currentItems[randomIndex]));
+                        request[request.Count - 1].stackSize = Random.Range(1, 10);
+                        // Remove the item from the current items so we dont get duplicates
+                        currentItems.RemoveAt(randomIndex);
+                    }
+
+                    Request(request);
+                } 
+                else
+                    Request(requestedItems);
                 break;
             default:
                 break;
@@ -77,6 +104,7 @@ public class ShopkeeperManager : Interactable
             // Check if the item has a match decrease size if there are multiple
             // it there is only 1 remove it completely
             if (requestedItems[i].item == item) {
+                PlayerController.instance.Money += requestedItems[i].item.value;
                 if (requestedItems[i].stackSize > 1)
                 {
                     requestedItems[i].stackSize--;
@@ -97,7 +125,7 @@ public class ShopkeeperManager : Interactable
         }
     }
 
-    /// <returns>True if it is one of the requested item, False if its not</returns>
+    /// <returns>True if item is one of the requested items, False if its not</returns>
     public bool IsRequestedItem(InventoryItem item) {
         for (int i = 0; i < requestedItems.Count; i++)
         {
