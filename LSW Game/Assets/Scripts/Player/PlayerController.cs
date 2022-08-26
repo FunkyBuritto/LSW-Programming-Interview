@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         // Check if we press the interact button
         if (Input.GetKeyDown(KeyCode.E)) {
 
-            // Get the item closest to the player that is in range
+            // Get the interactable closest to the player that is in range
             Interactable shortest = null;
             float dist = 0;
 

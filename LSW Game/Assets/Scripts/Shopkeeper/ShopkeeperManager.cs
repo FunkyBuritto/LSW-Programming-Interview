@@ -32,7 +32,7 @@ public class ShopkeeperManager : Interactable
     {
         interactionCount++;
 
-        // Check if we still have enough interactions
+        // Repeat the last interaction
         if (interactionCount > interactions.Count - 1)
             interactionCount--;
 
