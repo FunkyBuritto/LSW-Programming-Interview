@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Red Shirt
   itenDescription: Just a red shirt.
-  icon: {fileID: 0}
-  price: 10
+  value: 8
+  icon: {fileID: 1176251841, guid: 4cab964c589b81a42bca2d8e9232569a, type: 3}
   type: 0
   clothingPrefab: {fileID: 4191639789581874387, guid: d7a645ebc0d0a114e8124176a628f15b, type: 3}
+  clothingColor: {r: 1, g: 0.4117647, b: 0.4117647, a: 1}

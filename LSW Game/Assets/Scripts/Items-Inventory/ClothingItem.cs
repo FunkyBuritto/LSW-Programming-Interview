@@ -11,7 +11,7 @@ public enum ClothingType
 [CreateAssetMenu(fileName = "Clothing", menuName = "ScriptableObjects/ClothingItem", order = 2)]
 public class ClothingItem : InventoryItem
 {
-    public int price;
     public ClothingType type;
     public GameObject clothingPrefab;
+    public Color clothingColor;
 }

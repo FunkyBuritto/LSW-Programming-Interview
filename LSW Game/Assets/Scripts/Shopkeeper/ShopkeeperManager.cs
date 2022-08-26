@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShopkeeperManager : MonoBehaviour
+public class ShopkeeperManager : Interactable
 {
     public static ShopkeeperManager instance;
 
@@ -23,7 +23,7 @@ public class ShopkeeperManager : MonoBehaviour
 
     void Start() {  instance = this; }
 
-    public void Interact() 
+    public override void Interact() 
     {
         interactionCount++;
 
@@ -77,14 +77,19 @@ public class ShopkeeperManager : MonoBehaviour
             // Check if the item has a match decrease size if there are multiple
             // it there is only 1 remove it completely
             if (requestedItems[i].item == item) {
-                if (requestedItems[i].stackSize > 1) {
+                if (requestedItems[i].stackSize > 1)
+                {
                     requestedItems[i].stackSize--;
                 } else {
                     requestedItems.RemoveAt(i);
 
                     // If there are no more requested items move to the next interaction
                     if (requestedItems.Count == 0)
+                    {
                         interactionCount++;
+                        requestMade = false;
+                    }
+                        
                 }
                 UpdateRequestUI();
                 return;
@@ -108,11 +113,10 @@ public class ShopkeeperManager : MonoBehaviour
         if (requestMade) {
             // if we are not done with this request yet set the interaction one back so we return here
             // else we are done with this request
-            if (requestedItems.Count > 0) {
+            if (requestedItems.Count > 0) 
                 interactionCount--;
-            } else {
+            else 
                 requestMade = false;
-            }
         } else {
             // if the request is not yet made set the requested items to the right one
             requestedItems = request;
@@ -151,7 +155,7 @@ public class ShopkeeperManager : MonoBehaviour
                 sellButtons[i].SetActive(true);
                 removeButtons[i].SetActive(false);
             }
-            PlayerController.instance.inShopkeeperRange = true;
+            PlayerController.instance.interactables.Add(this);
         }
             
     }
@@ -166,7 +170,7 @@ public class ShopkeeperManager : MonoBehaviour
                 sellButtons[i].SetActive(false);
                 removeButtons[i].SetActive(true);
             }
-            PlayerController.instance.inShopkeeperRange = false;
+            PlayerController.instance.interactables.Remove(this);
         }
             
     }

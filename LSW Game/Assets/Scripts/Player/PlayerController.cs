@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    public int money;
+    public int Money;
+    [SerializeField] private TextMeshProUGUI moneyText;
 
     [Header("Movement")]
     [SerializeField] [Range(0, 1)] private float acceleration;
@@ -23,9 +25,8 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Vector2 input;
     
-    [HideInInspector] public List<ItemObject> itemObjects = new List<ItemObject>();
+    [HideInInspector] public List<Interactable> interactables = new List<Interactable>();
     [HideInInspector] public bool isLocked;
-    [HideInInspector] public bool inShopkeeperRange;
 
     private void Start()
     {
@@ -33,18 +34,6 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        // Create gameObjects from the clothingObjects and get the animators from it
-        if (shirtObject) {
-            shirtObject = Instantiate(shirt.clothingPrefab, transform);
-            shirtAnim = shirtObject.GetComponent<Animator>();
-        }
-
-        if (shoesObject) {
-            shoesObject = Instantiate(shoes.clothingPrefab, transform);
-            shoesAnim = shoesObject.GetComponent<Animator>();
-        }
-
     }
 
     private void Update()
@@ -61,28 +50,22 @@ public class PlayerController : MonoBehaviour
         // Check if we press the interact button
         if (Input.GetKeyDown(KeyCode.E)) {
 
-            // if we are in Shopkeeper Range we dont search for an item
-            if (inShopkeeperRange) {
-                ShopkeeperManager.instance.Interact();
-                return;
-            }
-
             // Get the item closest to the player that is in range
-            ItemObject shortest = null;
+            Interactable shortest = null;
             float dist = 0;
 
-            for (int i = 0; i < itemObjects.Count; i++)
+            for (int i = 0; i < interactables.Count; i++)
             {
-                float d = Mathf.Abs((itemObjects[i].transform.position - transform.position).sqrMagnitude);
+                float d = Mathf.Abs((interactables[i].transform.position - transform.position).sqrMagnitude);
                 if(d > dist) {
-                    shortest = itemObjects[i];
+                    shortest = interactables[i];
                     dist = d;
                 }
             }
 
-            // if we have an item that is the shortest to us add it to our inventory
+            // Interact with the interacteble clossest to us
             if (shortest != null)
-                InventoryManager.instance.AddItem(shortest.item);
+                shortest.Interact();
         }
     }
 
@@ -114,5 +97,34 @@ public class PlayerController : MonoBehaviour
             shoesAnim.SetFloat("VelocityX", input.x);
             shoesAnim.SetFloat("VelocityY", input.y);
         }
+    }
+
+    public void UpdateClothing()
+    {
+        // Destroy Current clothing 
+        GameObject[] clothing = GameObject.FindGameObjectsWithTag("Clothing");
+        for (int i = 0; i < clothing.Length; i++)
+        {
+            Destroy(clothing[i]);
+        }
+
+        // Create gameObjects from the clothingObjects and udate values
+        if (shirt)
+        {
+            shirtObject = Instantiate(shirt.clothingPrefab, transform);
+            shirtObject.GetComponent<SpriteRenderer>().color = shirt.clothingColor;
+            shirtAnim = shirtObject.GetComponent<Animator>();
+            shirtAnim.Play("RunUp");
+        }
+
+        if (shoes)
+        {
+            shoesObject = Instantiate(shoes.clothingPrefab, transform);
+            shoesObject.GetComponent<SpriteRenderer>().color = shoes.clothingColor;
+            shoesAnim = shoesObject.GetComponent<Animator>();
+            shoesAnim.Play("RunUp");
+        }
+
+        animator.Play("RunUp");
     }
 }

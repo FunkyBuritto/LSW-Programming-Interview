@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Red Shoes
   itenDescription: Just a pair of red shoes.
-  icon: {fileID: 0}
-  price: 10
+  value: 6
+  icon: {fileID: 326866957, guid: 7e8fdc76ff2f44f4d9479b49e0102281, type: 3}
   type: 1
   clothingPrefab: {fileID: 6422667283554594937, guid: 40e332afb63555b49b076822a55e3c45, type: 3}
+  clothingColor: {r: 1, g: 0.4117647, b: 0.4117647, a: 1}
